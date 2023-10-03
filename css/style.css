@@ -36,7 +36,7 @@ COMMON
 DEBUG
 ----------------------*/
 
-.debug a,
+/* .debug a,
 .debug button {
   all: unset;
   cursor: pointer;
@@ -142,7 +142,7 @@ DEBUG
 .debug .footer-logo,
 .debug .footer-button {
   background-color: #ffb6c1;
-}
+} */
 
 /*--------------
 BODY
