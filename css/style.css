@@ -8,6 +8,30 @@ RESET
   box-sizing: border-box;
 }
 
+/*--------------
+COMMON
+--------------*/
+
+.container {
+  margin: 0 auto;
+}
+
+.container.big {
+  width: 1250px;
+}
+
+.container.small {
+  width: 950px;
+}
+
+.whitebg {
+  background-color: white;
+}
+
+.graybg {
+  background-color: #f6f6f6;
+}
+
 /*----------------------
 DEBUG
 ----------------------*/
@@ -18,20 +42,27 @@ DEBUG
   cursor: pointer;
 }
 
-.debug nav {
+.debug {
   background-color: #add8e6;
 }
 
-.debug .main-menu {
+.debug .container.big {
   background-color: #daa520;
-  width: 1270px;
 }
 
-.debug .border {
+.debug header .logo,
+.debug header nav,
+.debug header .login,
+.debug header .hero-section,
+.debug main .section > *,
+.debug footer .footer-section,
+.debug footer .footer-section .footer-element:first-child,
+.debug .second-footer-section .footer-logo,
+.debug .second-footer-section .footer-button {
   border: 3px dashed black;
 }
 
-.debug .wborder {
+.debug footer .footer-section .footer-element:not(:first-child) {
   border: 2px dashed white;
 }
 
@@ -41,7 +72,6 @@ DEBUG
 
 .debug .hero-section {
   background-color: #ee82ee;
-  width: 950px;
   height: 420px;
 }
 
@@ -114,42 +144,91 @@ DEBUG
   background-color: #ffb6c1;
 }
 
+/*--------------
+BODY
+--------------*/
+
+body {
+  font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 /*----------------------
 HEADER
 ----------------------*/
 
 /* Nav */
-nav {
+header {
+  height: 580px;
   padding: 18px 0;
+  background-image: url('../img/jumbo.png');
+  background-size: cover;
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
 }
 
 /* Main menù */
-.main-menu {
+.container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
 }
 
-.main-menu > * {
+.container > * {
   padding: 18px;
 }
 
-.main-menu .link {
+.container .link {
   text-align: center;
 }
 
-.main-menu div {
+.container div {
   flex-grow: 1;
 }
 
 /* Link */
-.link div {
+nav .link li {
+  all: unset;
   display: inline-block;
 }
 
 /* Login */
-.main-menu .login {
+.container .login {
   text-align: right;
+}
+
+header .container .login a,
+header .hero-section .bottoni a,
+main .invite a {
+  text-decoration: none;
+  color: #474747;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+header .hero-section .bottoni a:last-child {
+  color: white;
+  background-color: #23272a;
+  margin-left: 15px;
+}
+
+header .hero-section .bottoni {
+  margin-top: 20px;
+}
+
+header .hero-section .bottoni i {
+  color: #23272a;
+  padding: 5px;
 }
 
 .section {
@@ -163,6 +242,11 @@ nav {
 
 .hero-section {
   margin: 0 auto;
+  text-align: center;
+}
+
+.hero-section h1 {
+  margin-bottom: 50px;
 }
 
 /*----------------------
@@ -172,12 +256,48 @@ MAIN
 main .section {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+main .section .second-column {
+  flex-grow: 0;
+}
+
+main .section h2,
+main .big-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+main .section p,
+main .big-section p {
+  line-height: 25px;
 }
 
 .big-section {
   display: flex;
   justify-content: center;
   padding: 50px;
+  text-align: center;
+}
+
+.invite {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.invite h3 {
+  margin-bottom: 60px;
+}
+
+main .invite a {
+  color: white;
+  background-color: #7289da;
+}
+
+main .invite a i {
+  margin-right: 10px;
 }
 
 /*----------------------
@@ -186,6 +306,34 @@ FOOTER
 
 footer {
   padding-top: 10px;
+  background-color: #23272a;
+  color: white;
+}
+
+footer h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+footer h3 {
+  color: #7289da;
+}
+
+footer .lang {
+  margin-bottom: 15px;
+}
+
+footer .footer-section .footer-element img {
+  width: 25px;
+  height: 18px;
+}
+
+footer .font-icons {
+  color: white;
+}
+
+footer .font-icons > * {
+  padding: 7px;
 }
 
 .footer-section {

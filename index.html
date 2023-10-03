@@ -4,73 +4,178 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discord Structure</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="debug">
+  <body>
     <header>
-      <nav>
-        <!-- Menù principale -->
-        <div class="main-menu">
-          <!-- Logo -->
-          <div class="logo border">
-            <a href="#">Logo</a>
-          </div>
-          <!-- Link del menù -->
-          <div class="link border">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-          </div>
-          <!-- Login -->
-          <div class="login border">
-            <button type="button">Login</button>
-          </div>
+      <!-- Menù principale -->
+      <div class="container big">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#"><img src="img/logo.svg" alt="discord-logo" /></a>
         </div>
-      </nav>
+        <!-- /Logo -->
+        <!-- Link del menù -->
+        <nav>
+          <div class="link">
+            <ul>
+              <li><a href="#">Scarica</a></li>
+              <li><a href="#">Perché Discord</a></li>
+              <li><a href="#">Nitro</a></li>
+              <li><a href="#">Sicurezza</a></li>
+              <li><a href="#">Assistenza</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- /Link del menù -->
+        <!-- Login -->
+        <div class="login">
+          <a href="#">Accedi</a>
+        </div>
+        <!-- /Login -->
+      </div>
+      <!-- /Menù principale -->
       <!-- Elemento centrale principale -->
       <div class="central-main-element">
-        <div class="hero-section border"></div>
+        <div class="container small">
+          <div class="hero-section">
+            <h1>Il tuo posto per parlare</h1>
+            <p>
+              Che tu faccia parte di un club scolastico, gruppo di gamer,
+              comunità artistica mondiale,<br />
+              o semplicemente di un piccolo gruppo di amici ma che vuole passare
+              il tempo assieme,<br />
+              Discord rende più facile chiacchierare ogni giorno e ritrovarsi
+              più spesso.
+            </p>
+            <div class="bottoni">
+              <a href="#"
+                ><i class="fa-solid fa-arrow-down"></i>Scarica per Mac</a
+              >
+              <a href="#">Apri Discord nel tuo browser</a>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- /Elemento centrale principale -->
     </header>
     <main>
       <!-- Sezioni a 2 colonne -->
       <div class="section whitebg">
-        <div class="first-column border"></div>
-        <div class="second-column border"></div>
+        <div class="first-column">
+          <img src="img/item1.svg" alt="item1" />
+        </div>
+        <div class="second-column border">
+          <h2>
+            Un luogo a invito<br />
+            con tutto lo<br />
+            spazio<br />
+            necessario per<br />
+            parlare
+          </h2>
+          <p>
+            I server Discord sono organizzati in canali<br />
+            tematici in cui puoi collaborare, condividere o<br />
+            semplicemente parlare della tua giornata<br />
+            senza intasare chat di gruppo
+          </p>
+        </div>
       </div>
       <div class="section graybg">
-        <div class="second-column border"></div>
-        <div class="first-column border"></div>
+        <div class="second-column border">
+          <h2>
+            Dove facile è<br />
+            trovarsi
+          </h2>
+          <p>
+            Mettiti comodo in un canale vocale quando<br />
+            hai tempo. Gli amici nel tuo server possono<br />
+            vedere che sei lì e unirsi instantaneamente<br />
+            senza dover chiamare
+          </p>
+        </div>
+        <div class="first-column border">
+          <img src="img/item2.svg" alt="item2" />
+        </div>
       </div>
       <div class="section whitebg">
-        <div class="first-column border"></div>
-        <div class="second-column border"></div>
+        <div class="first-column border">
+          <img src="img/item3.svg" alt="item3" />
+        </div>
+        <div class="second-column border">
+          <h2>
+            Da pochi a un<br />
+            fandom
+          </h2>
+          <p>
+            Dai inizio ad una community di qualsiasi<br />
+            dimensione con strumenti di moderazione e<br />
+            accesso ai membri personalizzabile.<br />
+            Concedi ai membri poteri speciali, crea<br />
+            canali privati e molto altri
+          </p>
+        </div>
       </div>
       <div class="big-section graybg">
-        <div class="hero-content"></div>
+        <div class="hero-content">
+          <h2>Tecnologia affidabile per tenersi in contatto</h2>
+          <p>
+            Video e audio a bassa latenza ti faranno sentire come se foste tutti
+            nella stessa stanza. Fai ciao in video, guarda<br />
+            gli amici giocare in streaming, o riunitevi in una sessione di
+            disegno con la condivisione schermo
+          </p>
+          <img src="img/item4-big.svg" alt="item4-big" />
+        </div>
       </div>
+      <!-- Invito a scaricare Discord -->
+      <div class="invite graybg">
+        <h3>Pronto a iniziare la tua avventura?</h3>
+        <a href="#"><i class="fa-solid fa-arrow-down"></i>Scarica per Mac</a>
+      </div>
+      <!-- /Invito a scaricare Discord -->
+      <!-- /Sezioni a 2 colonne -->
     </main>
     <footer>
       <!-- Prima sezione del footer a 5 colonne -->
-      <div class="footer-section border">
-        <div class="footer-element border"></div>
-        <div class="footer-element wborder"></div>
-        <div class="footer-element wborder"></div>
-        <div class="footer-element wborder"></div>
-        <div class="footer-element wborder"></div>
+      <div class="footer-section">
+        <div class="footer-element">
+          <h3>
+            Il tuo posto per<br />
+            parlare
+          </h3>
+          <div class="lang">
+            <img src="img/ita.png" alt="italian flag" />
+            <span> Italiano <i class="fa-solid fa-angle-down"></i></span>
+          </div>
+          <div class="font-icons">
+            <i class="fa-brands fa-twitter"></i
+            ><i class="fa-brands fa-instagram"></i
+            ><i class="fa-brands fa-facebook"></i
+            ><i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="footer-element"></div>
+        <div class="footer-element"></div>
+        <div class="footer-element"></div>
+        <div class="footer-element"></div>
       </div>
+      <!-- /Prima sezione del footer a 5 colonne -->
       <hr />
       <!-- seconda sezione del footer a 2 colonne -->
       <div class="second-footer-section">
-        <div class="footer-logo border">
+        <div class="footer-logo">
           <a href="#">Logo</a>
         </div>
-        <div class="footer-button border">
+        <div class="footer-button">
           <button type="button">Bottone</button>
         </div>
       </div>
+      <!-- /seconda sezione del footer a 2 colonne -->
     </footer>
   </body>
 </html>
