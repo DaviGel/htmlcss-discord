@@ -352,14 +352,31 @@ footer .footer-element li:first-child {
   color: #7289da;
 }
 
+footer .footer-section.container.big {
+  border-bottom: 1px solid #7289da;
+}
+
 .second-footer-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 30px auto 0;
+  align-items: flex-start;
+  margin: 10px auto 0;
+  padding-bottom: 60px;
 }
 
 .footer-logo,
 .footer-button {
   padding: 10px;
+}
+
+footer .footer-button {
+  text-align: right;
+}
+
+footer .footer-button a {
+  text-decoration: none;
+  color: white;
+  background-color: #7289da;
+  padding: 10px;
+  border-radius: 30px;
 }
