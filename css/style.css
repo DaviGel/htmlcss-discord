@@ -1,0 +1,207 @@
+/*----------------------
+RESET
+----------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------------------
+DEBUG
+----------------------*/
+
+.debug a,
+.debug button {
+  all: unset;
+  cursor: pointer;
+}
+
+.debug nav {
+  background-color: #add8e6;
+}
+
+.debug .main-menu {
+  background-color: #daa520;
+  width: 1270px;
+}
+
+.debug .border {
+  border: 3px dashed black;
+}
+
+.debug .wborder {
+  border: 2px dashed white;
+}
+
+.debug .central-main-element {
+  background-color: #00008b;
+}
+
+.debug .hero-section {
+  background-color: #ee82ee;
+  width: 950px;
+  height: 420px;
+}
+
+.debug .section {
+  height: 520px;
+}
+
+.debug .whitebg {
+  background-color: white;
+}
+
+.debug .graybg {
+  background-color: #d3d3d3;
+}
+
+.debug main .section .first-column {
+  background-color: #1e90ff;
+  width: 750px;
+}
+
+.debug main .section .second-column {
+  background-color: #ffc0cb;
+  width: 500px;
+}
+
+.debug .big-section {
+  height: 1040px;
+}
+
+.debug .hero-content {
+  width: 1250px;
+  height: 940px;
+  background-color: #228b22;
+}
+
+.debug footer {
+  background-color: #23272a;
+}
+
+.debug .footer-section {
+  width: 1250px;
+  margin-bottom: 40px;
+}
+
+.debug .footer-element {
+  height: 600px;
+}
+
+.debug .footer-section .footer-element {
+  background-color: #20b2aa;
+}
+
+.debug .footer-section .footer-element:first-child {
+  width: 375px;
+  background-color: #f08080;
+}
+
+.debug .footer-element {
+  width: 220px;
+}
+
+.debug .second-footer-section {
+  width: 1250px;
+  height: 80px;
+  background-color: #7fffd4;
+}
+
+.debug .footer-logo,
+.debug .footer-button {
+  background-color: #ffb6c1;
+}
+
+/*----------------------
+HEADER
+----------------------*/
+
+/* Nav */
+nav {
+  padding: 18px 0;
+}
+
+/* Main menù */
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.main-menu > * {
+  padding: 18px;
+}
+
+.main-menu .link {
+  text-align: center;
+}
+
+.main-menu div {
+  flex-grow: 1;
+}
+
+/* Link */
+.link div {
+  display: inline-block;
+}
+
+/* Login */
+.main-menu .login {
+  text-align: right;
+}
+
+.section {
+  padding: 55px 0;
+}
+
+/* Elemento centrale principale della pagina */
+.central-main-element {
+  padding: 50px;
+}
+
+.hero-section {
+  margin: 0 auto;
+}
+
+/*----------------------
+MAIN
+----------------------*/
+
+main .section {
+  display: flex;
+  justify-content: center;
+}
+
+.big-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+/*----------------------
+FOOTER
+----------------------*/
+
+footer {
+  padding-top: 10px;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.second-footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto 0;
+}
+
+.footer-logo,
+.footer-button {
+  padding: 10px;
+}
