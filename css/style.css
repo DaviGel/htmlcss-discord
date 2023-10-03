@@ -338,8 +338,18 @@ footer .font-icons > * {
 
 .footer-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
   margin: 0 auto;
+}
+
+footer .footer-element li {
+  list-style-type: none;
+  padding: 7px;
+}
+
+footer .footer-element li:first-child {
+  color: #7289da;
 }
 
 .second-footer-section {
