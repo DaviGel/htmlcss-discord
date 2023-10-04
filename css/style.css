@@ -8,9 +8,9 @@ RESET
   box-sizing: border-box;
 }
 
-/*--------------
+/*----------------------
 COMMON
---------------*/
+----------------------*/
 
 .container {
   margin: 0 auto;
@@ -144,9 +144,9 @@ DEBUG
   background-color: #ffb6c1;
 } */
 
-/*--------------
+/*----------------------
 BODY
---------------*/
+----------------------*/
 
 body {
   font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
