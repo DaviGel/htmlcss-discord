@@ -156,6 +156,10 @@ body {
 HEADER
 ----------------------*/
 
+#logo {
+  display: block;
+}
+
 /* Nav */
 header {
   height: 580px;
@@ -198,7 +202,10 @@ nav {
 /* Link */
 nav .link li {
   all: unset;
-  display: inline-block;
+}
+
+nav .link {
+  display: flex;
 }
 
 /* Login */
@@ -339,6 +346,14 @@ footer .lang {
 footer .footer-section .footer-element img {
   width: 25px;
   height: 18px;
+}
+
+footer .lang a,
+footer .font-icons a,
+footer .footer-element li a {
+  all: unset;
+  cursor: pointer;
+  padding: 7px;
 }
 
 footer .footer-element li {
