@@ -291,13 +291,12 @@ main .big-section p {
 
 .invite {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 35px;
   padding-bottom: 100px;
   background-image: url('../img/stars.svg');
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center top;
   background-size: contain;
-  background-size: 400px;
 }
 
 .invite h3 {
